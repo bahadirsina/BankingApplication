@@ -2,6 +2,10 @@ package com.turkcell;
 
 public class DebitCard extends BankCard {
 
+    DebitCard(int cardNumber, Account account) {
+        super(cardNumber, account);
+    }
+
     DebitCard() {
         
     }
