@@ -8,8 +8,12 @@ public class InMemoryAccountRepository implements AcountRepository {
         private Map<Integer, Account> accounts = new HashMap<>();
 
     @Override
-    public void save(Account account) {
-        accounts.put(account.getId(), account);
+    public boolean save(Account account) {
+    if (accounts.containsKey(account.getAccountNumber())) {
+        return false;
+    }
+    accounts.put(account.getAccountNumber(), account);
+    return true;
     }
 
     @Override

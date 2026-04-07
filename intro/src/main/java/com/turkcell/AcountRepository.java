@@ -1,7 +1,7 @@
 package com.turkcell;
 
 public interface AcountRepository {
-    void save(Account account);
+    boolean save(Account account);
     Account findByAccountNumber(int accountNumber);
     void deleteByAccountNumber(int accountNumber);
     void findAll();

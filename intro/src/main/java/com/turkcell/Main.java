@@ -17,6 +17,11 @@ public class Main {
 
         Account account1 = new Account(123456, customer1);
         account1.setActive(true);
+        if (accountRepository.save(account1)) {
+        System.out.println("Hesap eklendi.");
+        } else {
+        System.out.println("Aynı ID bulunduğu için hesap eklenemedi.");
+        }
 
         //System.out.println("Customer Name: " + customer1.getName() + " " + customer1.getSurname());
         //System.out.println("Customer Age: " + customer1.getAge());
