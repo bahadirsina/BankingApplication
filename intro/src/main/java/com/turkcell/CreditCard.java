@@ -2,6 +2,10 @@ package com.turkcell;
 
 public class CreditCard extends BankCard {
 
+    CreditCard(int cardNumber, Account account) {
+        super(cardNumber, account);
+    }
+
     CreditCard() {
         
     }
