@@ -32,7 +32,7 @@ public class DebitCard extends BankCard {
     }
     if (amount > 0) {
         this.setBalance(this.getBalance() + amount);
-        System.out.println(amount + " deposited.");
+        System.out.println(getAccount().getCustomer().getName() + " " + getAccount().getCustomer().getSurname() + " deposited " + amount);
     }
 }
 

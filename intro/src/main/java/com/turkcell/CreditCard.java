@@ -47,7 +47,7 @@ public class CreditCard extends BankCard {
         return;
     }
     usedLimit += amount;
-    System.out.println(amount + " spent by credit card.");
+    System.out.println(getAccount().getCustomer().getName() + " " + getAccount().getCustomer().getSurname() + " spent " + amount + " by credit card.");
     }
     public void increaseLimit(float amount) {
     if (amount > 0) {
