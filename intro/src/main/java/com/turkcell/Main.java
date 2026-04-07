@@ -12,7 +12,7 @@ public class Main {
         Customer customer2 = new Customer(16,"Osman", "Yaz", 21);
         customerRepository.save(customer2);
         Customer customer3 = new Customer(17,"Fuat", "Yılmaz", 19);
-        if (customerRepository.save(customer3)) {
+        if (customerRepository.save(customer1)) {
         System.out.println(customer3.getName() + " " + customer3.getSurname() +" added.");
         } else {
         System.out.println("Because of existing ID, " + customer3.getName() + " " + customer3.getSurname() + " not added.");
