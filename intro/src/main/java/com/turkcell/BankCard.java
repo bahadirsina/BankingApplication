@@ -2,6 +2,11 @@ package com.turkcell;
 
 public class BankCard {
 
+    BankCard(int cardNumber, Account account) {
+        this.cardNumber = cardNumber;
+        this.account = account;
+    }
+
     BankCard() {
         
     }
